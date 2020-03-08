@@ -68,4 +68,5 @@ def winner(board)
   if board[win_combination[0]] == "O"
     return "O"
   end
+  puts (win_combination)
 end
