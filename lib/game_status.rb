@@ -57,7 +57,7 @@ def over?(board)
   return false
 end
 
-def winner?(board)
+def winner(board)
   #check 1st element of win_combination array
   #if "X" return "X" otherwise return "O"
   win_combination = won?(board)
