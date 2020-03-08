@@ -61,9 +61,12 @@ def winner(board)
   #check 1st element of win_combination array
   #if "X" return "X" otherwise return "O"
   win_combination = won?(board)
-  if board[win_combination[0]] == "X"
+
+  if(!win_combination)
+    return nil  
+  elseif board[win_combination[0]] == "X"
     return "X"
-  else
+  elseif
     return "O"
   end
 end
