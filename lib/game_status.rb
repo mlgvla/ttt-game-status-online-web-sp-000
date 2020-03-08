@@ -33,8 +33,11 @@ def won?(board)
 end
 
 def full?(board)
+  index = 0
   am_I_full = board.all? do |position|
-    !(position.nil? || position == " ")
+    #!(position.nil? || position == " ")
+    position_taken(board, index)
+    index += 1
   end
   am_I_full
 end
