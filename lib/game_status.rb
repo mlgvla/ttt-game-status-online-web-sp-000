@@ -38,3 +38,19 @@ def full?(board)
   end
   am_I_full
 end
+
+def draw?(board)
+  #true if full and not won
+  if (full?(board) && !won?(board) )
+    return true
+  elseif (!won?(board) && !full?(board))
+    return false
+  else
+    if(won?(board))
+      return false
+  end
+  ##false if not won and not full
+
+  #false if won
+  
+end
