@@ -52,5 +52,5 @@ def draw?(board)
   ##false if not won and not full
 
   #false if won
-  
+
 end
